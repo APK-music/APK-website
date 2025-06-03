@@ -61,6 +61,47 @@
       margin-top: 0.5rem;
       color: #00ffe1;
     }
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 2rem 0;
+    }
+    /* Fade-in Animation */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.5s ease-in forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    /* Booking Section */
+    .booking {
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 12px;
+      margin-top: 2rem;
+    }
+    .booking h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .booking p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .booking a {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #00ffe1;
+      color: #0f0f0f;
+      font-weight: bold;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
   </style>
 </head>
 <body>
@@ -69,8 +110,10 @@
   <h1>APK</h1>
   <p>House und Hypertechno aus Leipzig</p>
 </header>
-<img src="IMG_6499.jpeg" alt="APK Künstlerbild"
-     style="max-width:100%; border-radius:12px; margin-bottom:2rem;" class="fade-in">
+
+<!-- Künstlerbild direkt unter Header -->
+<img src="apk.jpg" alt="APK Künstlerfoto" class="fade-in" />
+
 <main>
 
   <section class="social">
@@ -82,16 +125,16 @@
   </section>
 
   <section class="music">
-  <h2>Neuester Track: Fata Morgana</h2>
-  <div class="embed-container">
-    <iframe style="border-radius:12px"
-      src="https://open.spotify.com/embed/track/42iyujJAS6Pnl20caB5ulm"
-      width="300" height="152" frameborder="0" allowfullscreen=""
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy">
-    </iframe>
-  </div>
-</section>
+    <h2>Neuester Track: Fata Morgana</h2>
+    <div class="embed-container">
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/42iyujJAS6Pnl20caB5ulm"
+        width="300" height="152" frameborder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
 
   <section class="bio">
     <h2>Pressetext APK</h2>
@@ -103,10 +146,15 @@
     </p>
   </section>
 
-  <section class="booking">
-    <h2>Booking</h2>
-    <p>Für Booking-Anfragen und Kooperationen:</p>
-    <a class="booking-email" href="mailto:booking.apk@gmail.com">booking.apk@gmail.com</a>
+  <!-- Neue Booking-Sektion -->
+  <section class="booking fade-in">
+    <h2>📩 Jetzt buchen</h2>
+    <p>
+      APK steht für schnellen, energiegeladenen House & Hypertechno aus Leipzig – ideal für Clubnächte, Festivals und Events mit Anspruch.
+      <br><br>
+      Über <strong>2 Mio. Spotify-Streams</strong>, starke Präsenz auf Social Media und Erfahrung auf dem Dancefloor machen APK zu einem Highlight für jede Bühne.
+    </p>
+    <a href="mailto:booking.apk@gmail.com">📧 booking.apk@gmail.com</a>
   </section>
 
 </main>
